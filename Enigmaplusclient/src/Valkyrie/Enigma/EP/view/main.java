@@ -78,7 +78,7 @@ public class main extends javax.swing.JFrame {
         panelProfile_view.setVisible(false);
         panel_notmatch.setVisible(false);
         panelquestionviewM.setVisible(false);
-        getquestion();
+       // getquestion();
 
         // panelquestion.setVisible(false);
         jPanel7.setLocation(0, 0);
@@ -146,6 +146,12 @@ public class main extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jPanel10 = new javax.swing.JPanel();
         jPanel11 = new javax.swing.JPanel();
+        head_main = new javax.swing.JPanel();
+        head_main_userName = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
         panelProfile_view = new javax.swing.JPanel();
         jButton36 = new javax.swing.JButton();
         jTabbedPane1 = new javax.swing.JTabbedPane();
@@ -395,12 +401,6 @@ public class main extends javax.swing.JFrame {
         jTextArea1 = new javax.swing.JTextArea();
         jButton35 = new javax.swing.JButton();
         qpanel1_qnote3 = new javax.swing.JLabel();
-        head_main = new javax.swing.JPanel();
-        head_main_userName = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jLabel12 = new javax.swing.JLabel();
         panelquestionviewM = new javax.swing.JPanel();
         jScrollPane10 = new javax.swing.JScrollPane();
         panelquestion2 = new javax.swing.JPanel();
@@ -972,6 +972,89 @@ public class main extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        head_main.setBackground(new java.awt.Color(147, 29, 145));
+
+        head_main_userName.setBackground(new java.awt.Color(255, 255, 255));
+        head_main_userName.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        head_main_userName.setForeground(new java.awt.Color(255, 255, 255));
+        head_main_userName.setText("Malithi Gunathilaka");
+        head_main_userName.setBorder(null);
+        head_main_userName.setBorderPainted(false);
+        head_main_userName.setContentAreaFilled(false);
+        head_main_userName.setFocusPainted(false);
+        head_main_userName.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        head_main_userName.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                head_main_userNameMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                head_main_userNameMouseExited(evt);
+            }
+        });
+        head_main_userName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                head_main_userNameActionPerformed(evt);
+            }
+        });
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Valkyrie/Enigma/EP/view/images/malithi.jpg"))); // NOI18N
+
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Valkyrie/Enigma/EP/view/images/notification_2.png"))); // NOI18N
+        jButton3.setBorderPainted(false);
+        jButton3.setContentAreaFilled(false);
+        jButton3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Valkyrie/Enigma/EP/view/images/notification_1.png"))); // NOI18N
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
+        jButton8.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(255, 255, 255));
+        jButton8.setText("Enigma+");
+        jButton8.setBorderPainted(false);
+        jButton8.setContentAreaFilled(false);
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Valkyrie/Enigma/EP/view/images/IFS.jpg"))); // NOI18N
+
+        javax.swing.GroupLayout head_mainLayout = new javax.swing.GroupLayout(head_main);
+        head_main.setLayout(head_mainLayout);
+        head_mainLayout.setHorizontalGroup(
+            head_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(head_mainLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(head_main_userName, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        head_mainLayout.setVerticalGroup(
+            head_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(head_mainLayout.createSequentialGroup()
+                .addGap(7, 7, 7)
+                .addGroup(head_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel12)
+                    .addGroup(head_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton8)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, head_mainLayout.createSequentialGroup()
+                .addComponent(head_main_userName, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
         panelProfile_view.setBackground(new java.awt.Color(255, 255, 255));
 
         jButton36.setBackground(new java.awt.Color(255, 255, 255));
@@ -1024,7 +1107,7 @@ public class main extends javax.swing.JFrame {
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel17Layout.createSequentialGroup()
                 .addComponent(qpanel1_qtitle20)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
                 .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(qpanel1_qnote31)
                     .addComponent(qpanel1_date19))
@@ -1427,7 +1510,7 @@ public class main extends javax.swing.JFrame {
             jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel64Layout.createSequentialGroup()
                 .addGap(11, 11, 11)
-                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
                 .addComponent(jPanel65, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
@@ -1505,7 +1588,7 @@ public class main extends javax.swing.JFrame {
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel19Layout.createSequentialGroup()
                 .addComponent(qpanel1_qtitle37)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
                 .addGroup(jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(qpanel1_qnote48)
                     .addComponent(qpanel1_date36))
@@ -1908,7 +1991,7 @@ public class main extends javax.swing.JFrame {
             jPanel73Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel73Layout.createSequentialGroup()
                 .addGap(11, 11, 11)
-                .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(9, 9, 9)
                 .addComponent(jPanel74, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
@@ -3142,15 +3225,14 @@ public class main extends javax.swing.JFrame {
                     .addComponent(qpanel5_qtitle, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(panelquestionLayout.createSequentialGroup()
                         .addGroup(panelquestionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(panelquestionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(panelquestionLayout.createSequentialGroup()
-                                    .addGap(36, 36, 36)
-                                    .addGroup(panelquestionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(qpanel5_author)
-                                        .addComponent(qpanel5_date)))
-                                .addGroup(panelquestionLayout.createSequentialGroup()
-                                    .addGap(30, 30, 30)
-                                    .addComponent(qpanel5_qnote, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(panelquestionLayout.createSequentialGroup()
+                                .addGap(36, 36, 36)
+                                .addGroup(panelquestionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(qpanel5_author)
+                                    .addComponent(qpanel5_date)))
+                            .addGroup(panelquestionLayout.createSequentialGroup()
+                                .addGap(30, 30, 30)
+                                .addComponent(qpanel5_qnote, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(panelquestionLayout.createSequentialGroup()
                                 .addComponent(jButton16)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -3641,89 +3723,6 @@ public class main extends javax.swing.JFrame {
             .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
 
-        head_main.setBackground(new java.awt.Color(147, 29, 145));
-
-        head_main_userName.setBackground(new java.awt.Color(255, 255, 255));
-        head_main_userName.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        head_main_userName.setForeground(new java.awt.Color(255, 255, 255));
-        head_main_userName.setText("Malithi Gunathilaka");
-        head_main_userName.setBorder(null);
-        head_main_userName.setBorderPainted(false);
-        head_main_userName.setContentAreaFilled(false);
-        head_main_userName.setFocusPainted(false);
-        head_main_userName.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        head_main_userName.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                head_main_userNameMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                head_main_userNameMouseExited(evt);
-            }
-        });
-        head_main_userName.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                head_main_userNameActionPerformed(evt);
-            }
-        });
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Valkyrie/Enigma/EP/view/images/malithi.jpg"))); // NOI18N
-
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Valkyrie/Enigma/EP/view/images/notification_2.png"))); // NOI18N
-        jButton3.setBorderPainted(false);
-        jButton3.setContentAreaFilled(false);
-        jButton3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Valkyrie/Enigma/EP/view/images/notification_1.png"))); // NOI18N
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-
-        jButton8.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setText("Enigma+");
-        jButton8.setBorderPainted(false);
-        jButton8.setContentAreaFilled(false);
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
-            }
-        });
-
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Valkyrie/Enigma/EP/view/images/IFS.jpg"))); // NOI18N
-
-        javax.swing.GroupLayout head_mainLayout = new javax.swing.GroupLayout(head_main);
-        head_main.setLayout(head_mainLayout);
-        head_mainLayout.setHorizontalGroup(
-            head_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(head_mainLayout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jLabel12)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(head_main_userName, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        head_mainLayout.setVerticalGroup(
-            head_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(head_mainLayout.createSequentialGroup()
-                .addGap(7, 7, 7)
-                .addGroup(head_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel12)
-                    .addGroup(head_mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton8)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, head_mainLayout.createSequentialGroup()
-                .addComponent(head_main_userName, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
         panelquestionviewM.setBackground(new java.awt.Color(255, 255, 255));
 
         panelquestion2.setBackground(new java.awt.Color(255, 255, 255));
@@ -3996,43 +3995,43 @@ public class main extends javax.swing.JFrame {
         des = panelask_txt_dis.getText();
         ctgry = (String) q_category.getSelectedItem();
 
-        try {
-            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-            Connection conn = DBConnection.getDBConnection().getConnection();
-            if (ctgry != "All") {
-                PreparedStatement stat = conn.prepareStatement("SELECT uid,fname,lname,profession,reputation FROM user WHERE expertis=? ORDER BY reputation DESC;");
-                stat.setString(1, (String) q_category.getSelectedItem());
-
-                ResultSet rslt = stat.executeQuery();
-
-                for (int i = 0; i <= 5; i++) {
-                    rslt.next();
-                    String name = rslt.getString("fname") + " " + rslt.getString("lname");
-                    String designation = rslt.getString("profession");
-                    String reputation = rslt.getString("reputation");
-                    Object[] row = {name, designation, reputation};
-
-                    model.addRow(row);
-                }
-
-            } else {
-                PreparedStatement stat = conn.prepareStatement("SELECT uid,fname,lname,profession,reputation FROM user ORDER BY reputation DESC;");
-                ResultSet rslt = stat.executeQuery();
-
-                for (int i = 0; i <= 5; i++) {
-                    rslt.next();
-                    String name = rslt.getString("fname") + " " + rslt.getString("lname");
-                    String designation = rslt.getString("profession");
-                    String reputation = rslt.getString("reputation");
-                    Object[] row = {name, designation, reputation};
-
-                    model.addRow(row);
-                }
-
-            }
-        } catch (ClassNotFoundException | SQLException ex) {
-            System.out.println(ex);
-        }
+//        try {
+//            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+//            Connection conn = DBConnection.getDBConnection().getConnection();
+//            if (ctgry != "All") {
+//                PreparedStatement stat = conn.prepareStatement("SELECT uid,fname,lname,profession,reputation FROM user WHERE expertis=? ORDER BY reputation DESC;");
+//                stat.setString(1, (String) q_category.getSelectedItem());
+//
+//                ResultSet rslt = stat.executeQuery();
+//
+//                for (int i = 0; i <= 5; i++) {
+//                    rslt.next();
+//                    String name = rslt.getString("fname") + " " + rslt.getString("lname");
+//                    String designation = rslt.getString("profession");
+//                    String reputation = rslt.getString("reputation");
+//                    Object[] row = {name, designation, reputation};
+//
+//                    model.addRow(row);
+//                }
+//
+//            } else {
+//                PreparedStatement stat = conn.prepareStatement("SELECT uid,fname,lname,profession,reputation FROM user ORDER BY reputation DESC;");
+//                ResultSet rslt = stat.executeQuery();
+//
+//                for (int i = 0; i <= 5; i++) {
+//                    rslt.next();
+//                    String name = rslt.getString("fname") + " " + rslt.getString("lname");
+//                    String designation = rslt.getString("profession");
+//                    String reputation = rslt.getString("reputation");
+//                    Object[] row = {name, designation, reputation};
+//
+//                    model.addRow(row);
+//                }
+//
+//            }
+//        } catch (ClassNotFoundException | SQLException ex) {
+//            System.out.println(ex);
+//        }
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
@@ -4063,27 +4062,27 @@ public class main extends javax.swing.JFrame {
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         String search_title = txt_mainsearch.getText();
 
-        try {
-            Question que = QuestionController.searchquestion(search_title);
+      //  try {
+          //  Question que = QuestionController.searchquestion(search_title);
 
-            if (que != null) {
+          //  if (que != null) {
 
                 panelquestionmain.setVisible(false);
                 panelquestionviewM.setVisible(true);
-                qviewpanel_qdes.setText("<html><body style=\"word-wrap: break-word\">" + que.getQuestion() + "</body></html>");
-                qviewpanel_title.setText("<html><body style=\"word-wrap: break-word\">" + que.getTitle() + "</body></html>");
-                qviewpanel_qnote.setText("<html><body style=\"word-wrap: break-word\">" + que.getQ_short() + "</body></html>");
+             //   qviewpanel_qdes.setText("<html><body style=\"word-wrap: break-word\">" + que.getQuestion() + "</body></html>");
+             //   qviewpanel_title.setText("<html><body style=\"word-wrap: break-word\">" + que.getTitle() + "</body></html>");
+             //   qviewpanel_qnote.setText("<html><body style=\"word-wrap: break-word\">" + que.getQ_short() + "</body></html>");
 
-            } else {
-                JOptionPane.showMessageDialog(this, "No Result found !");
+          //  } else {
+          //      JOptionPane.showMessageDialog(this, "No Result found !");
 
-            }
+          //  }
 
-        } catch (ClassNotFoundException ex) {
-            ex.printStackTrace();
-        } catch (SQLException ex) {
-            ex.printStackTrace();
-        }
+     //   } catch (ClassNotFoundException ex) {
+      //      ex.printStackTrace();
+      //  } catch (SQLException ex) {
+      //      ex.printStackTrace();
+       // }
 
 
     }//GEN-LAST:event_jButton10ActionPerformed
@@ -4092,16 +4091,16 @@ public class main extends javax.swing.JFrame {
         Date date = new Date();
         String modifiedDate = new SimpleDateFormat("yyyy-MM-dd").format(date);
         Question q = new Question(0, des, title, short_des, 0, modifiedDate, "atttachment", "pic", "code", userID, ctgry);
-        try {
-            int res = QuestionController.addQuestion(q);
-            if (res > 0) {
-                JOptionPane.showMessageDialog(this, "Added ");
-            }
-        } catch (ClassNotFoundException ex) {
-            ex.printStackTrace();
-        } catch (SQLException ex) {
-            ex.printStackTrace();
-        }
+//        try {
+//            int res = QuestionController.addQuestion(q);
+//            if (res > 0) {
+//                JOptionPane.showMessageDialog(this, "Added ");
+//            }
+//        } catch (ClassNotFoundException ex) {
+//            ex.printStackTrace();
+//        } catch (SQLException ex) {
+//            ex.printStackTrace();
+//        }
         panelquestionviewM.setVisible(true);
         qviewpanel_title.setText("<html><body style=\"word-wrap: break-word;\">" + title + "</body></html>");
         qviewpanel_qnote.setText("<html><body style=\"word-wrap: break-word;\">" + short_des + "</body></html>");
@@ -4117,27 +4116,27 @@ public class main extends javax.swing.JFrame {
     private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
         String email = login_email.getText();
         String pw = login_password.getText();
-        try {
-            User user = UserController.Loginuser(email, pw);
-            if (user != null) {
+//        try {
+//            User user = UserController.Loginuser(email, pw);
+//            if (user != null) {
 
                 panelquestionmain.setVisible(true);
                 head_main.setVisible(true);
                 panellogin.setVisible(false);
-                head_main_userName.setText(user.getFname());
-                userID = user.getUid();
-            } else {
-                JOptionPane.showMessageDialog(this, "No customer found " + email);
-            }
-        } catch (ClassNotFoundException ex) {
-            ex.printStackTrace();
-        } catch (SQLException ex) {
-            ex.printStackTrace();
-
-            login_email.setText(null);
-            login_password.setText(null);
-
-        }
+//                head_main_userName.setText(user.getFname());
+//                userID = user.getUid();
+//            } else {
+//                JOptionPane.showMessageDialog(this, "No customer found " + email);
+//            }
+//        } catch (ClassNotFoundException ex) {
+//            ex.printStackTrace();
+//        } catch (SQLException ex) {
+//            ex.printStackTrace();
+//
+//            login_email.setText(null);
+//            login_password.setText(null);
+//
+//        }
 //         String email = login_email.getText();
 //        String pw = login_password.getText();
 //        String excutePost = excutePost("http://localhost:8080/login?un=" + email + "&pw=" + pw + "", "");
@@ -4149,9 +4148,9 @@ public class main extends javax.swing.JFrame {
 //            u = mapper.readValue(excutePost, User.class);
 //            if (u != null) {
 //                System.out.println(u);
-//                panelquestionmain.setVisible(true);
-//                head_main.setVisible(true);
-//                panellogin.setVisible(false);
+                panelquestionmain.setVisible(true);
+               head_main.setVisible(true);
+                panellogin.setVisible(false);
 //                head_main_userName.setText(u.getFname());
 //                userID = u.getUid();
 //            } else {
@@ -4194,20 +4193,20 @@ public class main extends javax.swing.JFrame {
         panelProfile_view.setVisible(true);
         panelquestionmain.setVisible(false);
         int userID = this.userID;
-        try {
-            User u = UserController.profileView(userID);
-            panelProfile_view_name.setText(u.getFname() + " " + u.getLname());
-            panelProfile_view_email.setText(u.getEmail());
-            panelProfile_view_designation.setText(u.getProfession());
-            panelProfile_view_reputation.setText(Integer.toString(u.getReputation()));
-            panelProfile_view_expertise.setText(u.getExpertis());
-        } catch (ClassNotFoundException ex) {
-            //System.out.println("in here");
-            ex.printStackTrace();
-        } catch (SQLException ex) {
-            //System.out.println("or in here");
-            ex.printStackTrace();
-        }
+//        try {
+//            User u = UserController.profileView(userID);
+//            panelProfile_view_name.setText(u.getFname() + " " + u.getLname());
+//            panelProfile_view_email.setText(u.getEmail());
+//            panelProfile_view_designation.setText(u.getProfession());
+//            panelProfile_view_reputation.setText(Integer.toString(u.getReputation()));
+//            panelProfile_view_expertise.setText(u.getExpertis());
+//        } catch (ClassNotFoundException ex) {
+//            //System.out.println("in here");
+//            ex.printStackTrace();
+//        } catch (SQLException ex) {
+//            //System.out.println("or in here");
+//            ex.printStackTrace();
+//        }
     }//GEN-LAST:event_jButton24ActionPerformed
 
     private void head_main_userNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_head_main_userNameActionPerformed
@@ -4260,19 +4259,19 @@ public class main extends javax.swing.JFrame {
             //  user.setPar_prof(parallel);
 
             UserCat cat = new UserCat(email, category, subcat);
-            try {
-                int res = UserController.addUser(user, cat);
-                //   if (res > 0) {
-                JOptionPane.showMessageDialog(this, "User Addded ");
+//            try {
+//                int res = UserController.addUser(user, cat);
+//                //   if (res > 0) {
+//                JOptionPane.showMessageDialog(this, "User Addded ");
                 panellogin.setVisible(true);
                 panelsignup.setVisible(false);
-
-                //   }
-            } catch (ClassNotFoundException ex) {
-                ex.printStackTrace();
-            } catch (SQLException ex) {
-                ex.printStackTrace();
-            }
+//
+//                //   }
+//            } catch (ClassNotFoundException ex) {
+//                ex.printStackTrace();
+//            } catch (SQLException ex) {
+//                ex.printStackTrace();
+//            }
         } else {
             panel_notmatch.setVisible(true);
         }
@@ -4302,14 +4301,14 @@ public class main extends javax.swing.JFrame {
         String cat = (String) signup_txt_cat.getSelectedItem();
         ArrayList<String> subcategory;
 
-        try {
-            subcategory = CategoryController.getsubcategory(cat);
-            signup_txt_subcat.setModel(new DefaultComboBoxModel<>(subcategory.toArray(new String[subcategory.size()])));
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
-            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-        }
+//        try {
+//            subcategory = CategoryController.getsubcategory(cat);
+//            signup_txt_subcat.setModel(new DefaultComboBoxModel<>(subcategory.toArray(new String[subcategory.size()])));
+//        } catch (ClassNotFoundException ex) {
+//            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+//        } catch (SQLException ex) {
+//            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+//        }
     }//GEN-LAST:event_signup_txt_catActionPerformed
 
     private void signup_txt_ifKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_signup_txt_ifKeyReleased
@@ -4345,15 +4344,15 @@ public class main extends javax.swing.JFrame {
     private void signup_com_expActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signup_com_expActionPerformed
         String exp = (String) signup_com_exp.getSelectedItem();
         ArrayList<String> category;
-        try {
-            category = CategoryController.getcategory(exp);
-            //       signup_txt_cat = new JComboBox( category);
-            signup_txt_cat.setModel(new DefaultComboBoxModel<>(category.toArray(new String[category.size()])));
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
-            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-        }
+//        try {
+//            category = CategoryController.getcategory(exp);
+//            //       signup_txt_cat = new JComboBox( category);
+//            signup_txt_cat.setModel(new DefaultComboBoxModel<>(category.toArray(new String[category.size()])));
+//        } catch (ClassNotFoundException ex) {
+//            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+//        } catch (SQLException ex) {
+//            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+//        }
 
     }//GEN-LAST:event_signup_com_expActionPerformed
 
@@ -4393,16 +4392,16 @@ public class main extends javax.swing.JFrame {
         a.setDate(modifiedDate);
         a.setQid(001);
 
-        try {
-            int res = AnswerController.addAnswer(a);
-            if (res > 0) {
-                //  JOptionPane.showMessageDialog(this, "Answer Added ");
-            }
-        } catch (ClassNotFoundException ex) {
-            ex.printStackTrace();
-        } catch (SQLException ex) {
-            ex.printStackTrace();
-        }
+//        try {
+//            int res = AnswerController.addAnswer(a);
+//            if (res > 0) {
+//                //  JOptionPane.showMessageDialog(this, "Answer Added ");
+//            }
+//        } catch (ClassNotFoundException ex) {
+//            ex.printStackTrace();
+//        } catch (SQLException ex) {
+//            ex.printStackTrace();
+//        }
     }//GEN-LAST:event_jButton42ActionPerformed
 
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
@@ -4547,32 +4546,32 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton41ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        try {
-            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-            Connection conn = DBConnection.getDBConnection().getConnection();
-
-            PreparedStatement stat = conn.prepareStatement("SELECT uid,fname,lname,profession,reputation FROM user WHERE fname=? && lname=?;");
-
-            String string = jTextField3.getText();
-            String[] parts = string.split(" ");
-            String part1 = parts[0];
-            String part2 = parts[1];
-            stat.setString(1, part1);
-            stat.setString(2, part2);
-
-            ResultSet rslt = stat.executeQuery();
-
-            rslt.next();
-            String name = rslt.getString("fname") + " " + rslt.getString("lname");
-            String designation = rslt.getString("profession");
-            String reputation = rslt.getString("reputation");
-            Object[] row = {name, designation, reputation};
-
-            model.addRow(row);
-
-        } catch (ClassNotFoundException | SQLException ex) {
-            System.out.println(ex);
-        }
+//        try {
+//            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+//            Connection conn = DBConnection.getDBConnection().getConnection();
+//
+//            PreparedStatement stat = conn.prepareStatement("SELECT uid,fname,lname,profession,reputation FROM user WHERE fname=? && lname=?;");
+//
+//            String string = jTextField3.getText();
+//            String[] parts = string.split(" ");
+//            String part1 = parts[0];
+//            String part2 = parts[1];
+//            stat.setString(1, part1);
+//            stat.setString(2, part2);
+//
+//            ResultSet rslt = stat.executeQuery();
+//
+//            rslt.next();
+//            String name = rslt.getString("fname") + " " + rslt.getString("lname");
+//            String designation = rslt.getString("profession");
+//            String reputation = rslt.getString("reputation");
+//            Object[] row = {name, designation, reputation};
+//
+//            model.addRow(row);
+//
+//        } catch (ClassNotFoundException | SQLException ex) {
+//            System.out.println(ex);
+//        }
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void txt_mainsearchMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txt_mainsearchMouseClicked
@@ -4582,74 +4581,74 @@ public class main extends javax.swing.JFrame {
     private void qpanel4_qtitleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_qpanel4_qtitleActionPerformed
         panelquestionviewM.setVisible(true);
         panelquestionmain.setVisible(false);
-        try {
-            Question qs4 = QuestionController.fillquestion(qid_4);
-
-            qviewpanel_title.setText("<html><body style=\"word-wrap: break-word;\">" + qs4.getTitle() + "</body></html>");
-            qviewpanel_qnote.setText("<html><body style=\"word-wrap: break-word;\">" + qs4.getQ_short() + "</body></html>");
-            qviewpanel_qdes.setText("<html><body style=\"word-wrap: break-word;\">" + qs4.getQuestion() + "</body></html>");
-            x = true;
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
-            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-        }  // TODO add your handling code here:
+//        try {
+//            Question qs4 = QuestionController.fillquestion(qid_4);
+//
+//            qviewpanel_title.setText("<html><body style=\"word-wrap: break-word;\">" + qs4.getTitle() + "</body></html>");
+//            qviewpanel_qnote.setText("<html><body style=\"word-wrap: break-word;\">" + qs4.getQ_short() + "</body></html>");
+//            qviewpanel_qdes.setText("<html><body style=\"word-wrap: break-word;\">" + qs4.getQuestion() + "</body></html>");
+//            x = true;
+//        } catch (ClassNotFoundException ex) {
+//            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+//        } catch (SQLException ex) {
+//            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+//        }  // TODO add your handling code here:
     }//GEN-LAST:event_qpanel4_qtitleActionPerformed
 
     private void qpanel3_qtitleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_qpanel3_qtitleActionPerformed
         panelquestionviewM.setVisible(true);
         panelquestionmain.setVisible(false);
-        try {
-            Question qs3 = QuestionController.fillquestion(qid_3);
-
-            qviewpanel_title.setText("<html><body style=\"word-wrap: break-word;\">" + qs3.getTitle() + "</body></html>");
-            qviewpanel_qnote.setText("<html><body style=\"word-wrap: break-word;\">" + qs3.getQ_short() + "</body></html>");
-            qviewpanel_qdes.setText("<html><body style=\"word-wrap: break-word;\">" + qs3.getQuestion() + "</body></html>");
-            x = true;
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
-            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-        } // TODO add your handling code here:
+//        try {
+//            Question qs3 = QuestionController.fillquestion(qid_3);
+//
+//            qviewpanel_title.setText("<html><body style=\"word-wrap: break-word;\">" + qs3.getTitle() + "</body></html>");
+//            qviewpanel_qnote.setText("<html><body style=\"word-wrap: break-word;\">" + qs3.getQ_short() + "</body></html>");
+//            qviewpanel_qdes.setText("<html><body style=\"word-wrap: break-word;\">" + qs3.getQuestion() + "</body></html>");
+//            x = true;
+//        } catch (ClassNotFoundException ex) {
+//            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+//        } catch (SQLException ex) {
+//            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+//        } // TODO add your handling code here:
     }//GEN-LAST:event_qpanel3_qtitleActionPerformed
 
     private void qpanel2_qtitleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_qpanel2_qtitleActionPerformed
         panelquestionviewM.setVisible(true);
         panelquestionmain.setVisible(false);
-        try {
-            Question qs2 = QuestionController.fillquestion(qid_2);
-
-            qviewpanel_title.setText("<html><body style=\"word-wrap: break-word;\">" + qs2.getTitle() + "</body></html>");
-            qviewpanel_qnote.setText("<html><body style=\"word-wrap: break-word;\">" + qs2.getQ_short() + "</body></html>");
-            qviewpanel_qdes.setText("<html><body style=\"word-wrap: break-word;\">" + qs2.getQuestion() + "</body></html>");
-            resPoints = qid_2;
-            x = true;
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
-            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-        }
+//        try {
+//            Question qs2 = QuestionController.fillquestion(qid_2);
+//
+//            qviewpanel_title.setText("<html><body style=\"word-wrap: break-word;\">" + qs2.getTitle() + "</body></html>");
+//            qviewpanel_qnote.setText("<html><body style=\"word-wrap: break-word;\">" + qs2.getQ_short() + "</body></html>");
+//            qviewpanel_qdes.setText("<html><body style=\"word-wrap: break-word;\">" + qs2.getQuestion() + "</body></html>");
+//            resPoints = qid_2;
+//            x = true;
+//        } catch (ClassNotFoundException ex) {
+//            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+//        } catch (SQLException ex) {
+//            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+//        }
     }//GEN-LAST:event_qpanel2_qtitleActionPerformed
 
     private void qpanel1_qtitleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_qpanel1_qtitleActionPerformed
         panelquestionviewM.setVisible(true);
         panelquestionmain.setVisible(false);
-        try {
-            Question qs = QuestionController.fillquestion(qid_1);
-
-            qviewpanel_title.setText("<html><body style=\"word-wrap: break-word;\">" + qs.getTitle() + "</body></html>");
-            qviewpanel_qnote.setText("<html><body style=\"word-wrap: break-word;\">" + qs.getQ_short() + "</body></html>");
-
-            qviewpanel_qdes.setText("<html><body style=\"word-wrap: break-word;\">" + qs.getQuestion() + "</body></html>");
-            jLabel41.setText(String.valueOf(points));
-            jLabel78.setText(String.valueOf(points));
-            resPoints = qid_1;
-            x = true;
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
-            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
-        }
+//        try {
+//            Question qs = QuestionController.fillquestion(qid_1);
+//
+//            qviewpanel_title.setText("<html><body style=\"word-wrap: break-word;\">" + qs.getTitle() + "</body></html>");
+//            qviewpanel_qnote.setText("<html><body style=\"word-wrap: break-word;\">" + qs.getQ_short() + "</body></html>");
+//
+//            qviewpanel_qdes.setText("<html><body style=\"word-wrap: break-word;\">" + qs.getQuestion() + "</body></html>");
+//            jLabel41.setText(String.valueOf(points));
+//            jLabel78.setText(String.valueOf(points));
+//            resPoints = qid_1;
+//            x = true;
+//        } catch (ClassNotFoundException ex) {
+//            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+//        } catch (SQLException ex) {
+//            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+//        }
     }//GEN-LAST:event_qpanel1_qtitleActionPerformed
 
     private void qpanel1_qtitleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_qpanel1_qtitleMouseClicked
